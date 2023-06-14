@@ -62,7 +62,7 @@ function Resume({ jobs }) {
 
       <section className="max-w-7xl mx-auto">
         <div className="w-full justify-between flex flex-row my-4">
-          <h1 className="h1-content uppercase">List of all resume</h1>
+          <h1 className="uppercase text-4xl font-bold">List of all resume</h1>
           <button
             onClick={() => setCreateResumeModal(true)}
             className="py-1 px-3 bg-blue-600 text-white text-xl rounded-md"
