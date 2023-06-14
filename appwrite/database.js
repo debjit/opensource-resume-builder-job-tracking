@@ -1,19 +1,18 @@
 import { Client, Account, Databases, Query, ID } from "appwrite";
-import {
-  awEndpoint,
-  awProjectID,
-  awDatabaseMultiResume,
-  awTableBlocks,
-  awTableResumes,
-  awTableJobs,
-  awTableSkills,
-  awTableInfo,
-  awTableTodos
-} from "./appwriteIDs";
+
+// Database ID
+const awDatabaseMultiResume = process.env.NEXT_PUBLIC_AW_DATABASE_ID;
+// Tables
+const awTableBlocks = process.env.NEXT_PUBLIC_AW_TABLE_BLOCK_ID;
+export const awTableResumes = process.env.NEXT_PUBLIC_AW_TABLE_RESUME_ID;
+export const awTableJobs =process.env.NEXT_PUBLIC_AW_TABLE_JOBS_ID;
+export const awTableSkills = process.env.NEXT_PUBLIC_AW_TABLE_SKILLS_ID;
+export const awTableInfo = process.env.NEXT_PUBLIC_AW_TABLE_INFO_ID;
+export const awTableTodos = process.env.NEXT_PUBLIC_AW_TABLE_TODO_ID;
 
 const client = new Client()
-  .setEndpoint(awEndpoint)
-  .setProject(awProjectID);
+  .setEndpoint(process.env.NEXT_PUBLIC_AW_END_POINT)
+  .setProject(process.env.NEXT_PUBLIC_AW_PROJECT_ID);
 
 // Database
 const databases = new Databases(client, awDatabaseMultiResume);
