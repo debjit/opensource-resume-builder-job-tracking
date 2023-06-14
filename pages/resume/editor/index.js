@@ -15,15 +15,16 @@ function Resume({ jobs }) {
   const [newResume, setNewResume] = useState("");
 
   function createNewResume() {
-    const createResumeDB = createResume({ name: newResume });
-    createResumeDB.then(
-      function (response) {
-        router.push(`/resume/editor/${response.$id}`);
-      },
-      function (error) {
-        console.log(error);
-      }
-    );
+    // const createResumeDB = createResume({ name: newResume });
+    // createResumeDB.then(
+    //   function (response) {
+    //     router.push(`/resume/editor/${response.$id}`);
+    //   },
+    //   function (error) {
+    //     console.log(error);
+    //   }
+    // );
+    alert("This is a demo! Creating Resume is disabled.");
   }
   useEffect(() => {
     setLoader(true);
@@ -52,12 +53,20 @@ function Resume({ jobs }) {
           value={newResume}
           onChange={(e) => setNewResume(e.target.value)}
         />
-        <button
-          onClick={() => createNewResume()}
-          className="py-1 px-3 bg-blue-600 text-white text-md rounded-md my-2"
-        >
-          Create Resume
-        </button>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setCreateResumeModal(false)}
+            className="py-1 px-3 bg-rose-600 text-white text-md rounded-md my-2"
+          >
+            Cancel
+          </button>
+          <button
+            onClick={() => createNewResume()}
+            className="py-1 px-3 bg-blue-600 text-white text-md rounded-md my-2"
+          >
+            Create Resume
+          </button>
+        </div>
       </Modal>
 
       <section className="max-w-7xl mx-auto">
@@ -75,39 +84,40 @@ function Resume({ jobs }) {
         {loader && <Loader />}
 
         <div className="grid grid-cols-3 gap-4">
-          {!loader && resumes.map((resume) => {
-            return (
-              <div
-                key={resume.$id}
-                className="bg-slate-50 shadow-md border p-4 rounded-md"
-              >
-                <h3 className="text-md font-bold ">{resume.name}</h3>
-                <p className="text-sm mb-4">
-                  Status: {resume.status ? "Published" : "Draft"}
-                </p>
-                <div className="flex gap-2">
-                <button
-                    className="py-1 px-3 bg-green-600 text-white rounded-md"
-                    href={`/resume/editor/${resume.$id}`}
-                  >
-                    {resume.status?'Print':"Preview"}
-                  </button>
-                  <Link
-                    className="py-1 px-3 bg-blue-600 text-white rounded-md"
-                    href={`/resume/editor/${resume.$id}`}
-                  >
-                    Update
-                  </Link>
-                  <button
-                    className="py-1 px-3 bg-rose-600 text-white rounded-md"
-                    href={`/resume/editor/${resume.$id}`}
-                  >
-                    Delete
-                  </button>
+          {!loader &&
+            resumes.map((resume) => {
+              return (
+                <div
+                  key={resume.$id}
+                  className="bg-slate-50 shadow-md border p-4 rounded-md"
+                >
+                  <h3 className="text-md font-bold ">{resume.name}</h3>
+                  <p className="text-sm mb-4">
+                    Status: {resume.status ? "Published" : "Draft"}
+                  </p>
+                  <div className="flex gap-2">
+                    <button
+                      className="py-1 px-3 bg-green-600 text-white rounded-md"
+                      href={`/resume/editor/${resume.$id}`}
+                    >
+                      {resume.status ? "Print" : "Preview"}
+                    </button>
+                    <Link
+                      className="py-1 px-3 bg-blue-600 text-white rounded-md"
+                      href={`/resume/editor/${resume.$id}`}
+                    >
+                      Update
+                    </Link>
+                    <button
+                      className="py-1 px-3 bg-rose-600 text-white rounded-md"
+                      href={`/resume/editor/${resume.$id}`}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
         </div>
         <ul></ul>
       </section>

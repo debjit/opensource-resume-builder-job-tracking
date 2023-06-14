@@ -86,10 +86,10 @@ function Index({ jobs }) {
                       <button
                         id="applyButton"
                         class="bg-blue-500 hover:bg-gray-600 text-white py-2 px-4 rounded-md disabled"
-                        disabled
+                        onClick={()=> alert('This is a demo. Your job application will be proceed from here.')}
                       >
                         Apply
-                        <span class="tooltip text-xs ml-2">(Coming Soon)</span>
+                        {/* <span class="tooltip text-xs ml-2">(Coming Soon)</span> */}
                       </button>
                     </div>
                   )}

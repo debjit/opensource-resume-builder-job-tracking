@@ -37,7 +37,7 @@ export default function Banner() {
           >
             <circle cx={1} cy={1} r={1} />
           </svg>
-          This is a demo for Hackathon, all features may not work.{" "}
+          This is a demo for Hackathon, all features may not work.{" "} Login Disabled.
         </p>
       </div>
       <div className="flex flex-1 justify-end">
