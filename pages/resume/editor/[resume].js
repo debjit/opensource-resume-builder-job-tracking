@@ -47,6 +47,18 @@ function Editor() {
             >
               Get User Information from Showwcase
             </button>
+            <button
+              onClick={()=>alert("Demo App: Successful.")}
+              className="bg-green-500 hover:bg-green-700 text-white font-bold mx-3 py-2 px-4 rounded capitalize my-2"
+            >
+              Update Resume
+            </button>
+            <button
+              onClick={()=>alert("Demo App: Successful.")}
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded capitalize my-2"
+            >
+              Publish Resume
+            </button>
           </div>
           <h2 className="text-2xl font-bold pb-2 pt-6">Basic Information</h2>
           <BasicInfoComponent title={userData && userData.displayName} />
