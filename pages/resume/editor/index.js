@@ -1,130 +1,118 @@
-import { useState } from 'react';
-import Nav from "../../components/Layout/Nav";
-import DetailEvent from "../../components/Resume/FormInput/DetailEvent";
-import BasicInfoComponent from "../../components/Resume/FormInput/BasicInfoComponent";
-import SummeryComponent from "../../components/Resume/FormInput/SummeryComponent";
-import Modal from '../../components/Common/Modal';
-import { PlusIcon } from '@heroicons/react/24/outline';
+import { getAllResume, createResume } from "@/appwrite/database";
+import TextInput from "@/pages/components/Common/Form/TextInput";
+import Loader from "@/pages/components/Common/Loader";
+import Modal from "@/pages/components/Common/Modal/Modal";
+import Nav from "@/pages/components/Layout/Nav";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 
-function Editor() {
-  const [userData, setUserData] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const user = 'debjit';
+function Resume({ jobs }) {
+  const router = useRouter();
+  const [resumes, setResumes] = useState([]);
+  const [loader, setLoader] = useState(false);
+  const [createResumeModal, setCreateResumeModal] = useState(false);
+  const [newResume, setNewResume] = useState("");
 
-  const handleClick = async () => {
-    try {
-      const response = await fetch(`https://cache.showwcase.com/user/debjit`);
-      const data = await response.json();
-      setUserData(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+  function createNewResume() {
+    const createResumeDB = createResume({ name: newResume });
+    createResumeDB.then(
+      function (response) {
+        router.push(`/resume/editor/${response.$id}`);
+      },
+      function (error) {
+        console.log(error);
+      }
+    );
+  }
+  useEffect(() => {
+    setLoader(true);
+    const getResumes = getAllResume();
 
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
+    getResumes.then(
+      function (response) {
+        console.log(response.documents);
+        setResumes(response.documents);
+        setLoader(false);
+      },
+      function (error) {
+        setLoader(false);
+        console.log(error);
+      }
+    );
+  }, []);
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
-  function submitForm() {}
-  
   return (
     <>
       <Nav />
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-        Test
+      <Modal isOpen={createResumeModal} setIsOpen={setCreateResumeModal}>
+        <TextInput
+          name={"createResume"}
+          label="Provide Resume Name"
+          value={newResume}
+          onChange={(e) => setNewResume(e.target.value)}
+        />
+        <button
+          onClick={() => createNewResume()}
+          className="py-1 px-3 bg-blue-600 text-white text-md rounded-md my-2"
+        >
+          Create Resume
+        </button>
       </Modal>
-      <div className="max-w-7xl mx-auto mt-4">
-        <div className="w-full">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mx-auto">Add Resume</h1>
-            <button
-              onClick={handleClick}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded capitalize my-2"
-            >
-              Get User Information from Showwcase
-            </button>
-          </div>
-          <h2 className="text-2xl font-bold pb-2 pt-6">Basic Information</h2>
-          <BasicInfoComponent title={userData && userData.displayName} />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Summary</h2>
-          <SummeryComponent summery={userData && userData.about} />
-          <div className="mt-6 mb-2 border p-4 rounded">
-            <div class="flex items-center justify-between">
-              <h2 class="text-2xl font-bold">Education</h2>
-              <button
-                onClick={handleOpenModal}
-                class="ml-4 py-0.5 px-4 text-md text-white test-border bg-blue-600 rounded-full"
-              >
-                Add
-              </button>
-            </div>
-              <p className='text-base py-4'>Please add your educational details here.</p>
-            <div>
-            </div>
-          </div>
-          {/* <DetailEvent
-            name={"test"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          /> */}
-          <h2 className="text-2xl font-bold pb-2 pt-6">Employment</h2>
-          <DetailEvent
-            name={"test2"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Skills</h2>
-          <DetailEvent
-            name={"test2"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Projects</h2>
-          <DetailEvent
-            name={"test2"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Awards</h2>
-          <DetailEvent
-            name={"test"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Activities</h2>
-          <DetailEvent
-            name={"test"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Volunteering</h2>
-          <DetailEvent
-            name={"test"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
-          <h2 className="text-2xl font-bold pb-2 pt-6">Others</h2>
-          <DetailEvent
-            name={"test"}
-            label={"test"}
-            value={"test"}
-            handleChange={submitForm}
-          />
+
+      <section className="max-w-7xl mx-auto">
+        <div className="w-full justify-between flex flex-row my-4">
+          <h1 className="h1-content uppercase">List of all resume</h1>
+          <button
+            onClick={() => setCreateResumeModal(true)}
+            className="py-1 px-3 bg-blue-600 text-white text-xl rounded-md"
+          >
+            Add Resume
+          </button>
         </div>
-      </div>
+      </section>
+      <section className="max-w-7xl mx-auto">
+        {loader && <Loader />}
+
+        <div className="grid grid-cols-3 gap-4">
+          {!loader && resumes.map((resume) => {
+            return (
+              <div
+                key={resume.$id}
+                className="bg-slate-50 shadow-md border p-4 rounded-md"
+              >
+                <h3 className="text-md font-bold ">{resume.name}</h3>
+                <p className="text-sm mb-4">
+                  Status: {resume.status ? "Published" : "Draft"}
+                </p>
+                <div className="flex gap-2">
+                <button
+                    className="py-1 px-3 bg-green-600 text-white rounded-md"
+                    href={`/resume/editor/${resume.$id}`}
+                  >
+                    {resume.status?'Print':"Preview"}
+                  </button>
+                  <Link
+                    className="py-1 px-3 bg-blue-600 text-white rounded-md"
+                    href={`/resume/editor/${resume.$id}`}
+                  >
+                    Update
+                  </Link>
+                  <button
+                    className="py-1 px-3 bg-rose-600 text-white rounded-md"
+                    href={`/resume/editor/${resume.$id}`}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <ul></ul>
+      </section>
     </>
   );
 }
 
-export default Editor;
+export default Resume;
