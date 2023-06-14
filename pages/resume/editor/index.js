@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import Nav from "../components/Layout/Nav";
-import DetailEvent from "../components/Resume/FormInput/DetailEvent";
-import BasicInfoComponent from "../components/Resume/FormInput/BasicInfoComponent";
-import SummeryComponent from "../components/Resume/FormInput/SummeryComponent";
-import Modal from '../components/Common/Modal';
+import Nav from "../../components/Layout/Nav";
+import DetailEvent from "../../components/Resume/FormInput/DetailEvent";
+import BasicInfoComponent from "../../components/Resume/FormInput/BasicInfoComponent";
+import SummeryComponent from "../../components/Resume/FormInput/SummeryComponent";
+import Modal from '../../components/Common/Modal';
 import { PlusIcon } from '@heroicons/react/24/outline';
 
 function Editor() {

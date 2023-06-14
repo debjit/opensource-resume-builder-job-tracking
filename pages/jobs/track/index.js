@@ -1,4 +1,5 @@
 import Nav from "@/pages/components/Layout/Nav";
+import Link from "next/link";
 import React from "react";
 
 export default function TrackJobs({ appliedJobs, savedJobs }) {
@@ -20,27 +21,29 @@ export default function TrackJobs({ appliedJobs, savedJobs }) {
             <div>
               {savedJobs.map((job) => {
                 return (
-                  <div key={job.id} className="mx-1 mb-2 p-1 bg-white rounded-md">
+                  <div
+                    key={job.id}
+                    className="mx-1 mb-2 p-1 bg-white rounded-md"
+                  >
                     <div className="ml-4">
                       <div className="text-lg font-semibold">
-                      <p>
-                        {job.company.name}
-                      </p>
-                      <p>
-                         (Total applied:{" "}{job.totalApplicants})
-                      </p>
-
+                        <p>{job.company.name}</p>
+                        <p>(Total applied: {job.totalApplicants})</p>
                       </div>
                       <div className="mt-2">
                         <p className="font-bold">{job.title}</p>
-                        <p>
-                          {job.experience
-                            ? job.experience
-                            : ""}
-                        </p>
+                        <p>{job.experience ? job.experience : ""}</p>
                         <p className="mt-2">
                           {job.salary.range ? job.salary.range : ""}
                         </p>
+                        <div className="flex flex-row justify-end mx-auto p-2 w-full">
+                          <Link
+                            className="py-1 px-2 bg-green-300 text-black rounded-md text-center"
+                            href="/jobs"
+                          >
+                            Apply
+                          </Link>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -53,26 +56,20 @@ export default function TrackJobs({ appliedJobs, savedJobs }) {
             <h3 className="text-md font-bold">Applied</h3>
             <p className="pb-4">All your applied job will be listed here.</p>
             <div>
-            {appliedJobs.map((job) => {
+              {appliedJobs.map((job) => {
                 return (
-                  <div key={job.id} className="mx-1 mb-2 p-1 bg-white rounded-md">
+                  <div
+                    key={job.id}
+                    className="mx-1 mb-2 p-1 bg-white rounded-md"
+                  >
                     <div className="ml-4">
                       <div className="text-lg font-semibold">
-                      <p>
-                        {job.company.name}
-                      </p>
-                      <p>
-                         (Total applied:{" "}{job.totalApplicants})
-                      </p>
-
+                        <p>{job.company.name}</p>
+                        <p>(Total applied: {job.totalApplicants})</p>
                       </div>
                       <div className="mt-2">
                         <p className="font-bold">{job.title}</p>
-                        <p>
-                          {job.experience
-                            ? job.experience
-                            : ""}
-                        </p>
+                        <p>{job.experience ? job.experience : ""}</p>
                         <p className="mt-2">
                           {job.salary.range ? job.salary.range : ""}
                         </p>
