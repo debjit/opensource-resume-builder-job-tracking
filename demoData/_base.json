@@ -1,0 +1,450 @@
+{
+    "id": "uuida1",
+    "userId": 1,
+    "resumeType": "fullstack",
+    "userInfo": {
+      "title": "Mr",
+      "firstName": "Debjit",
+      "lsatName": "Biswas"
+    },
+    "resume": {
+      "type": "fullstack",
+      "title": "Fullstack Web Developer",
+      "profession": "Software Engineer",
+      "experience": "+5 years",
+      "location": "India",
+      "github": "debjit",
+      "linkedin": "debjitwb",
+      "summery": "<p>Highly skilled and versatile web developer with a strong passion for creating user-friendly and innovative web applications. With 5 years of experience in both frontend and backend development, I possess a comprehensive understanding of the full software development lifecycle. I am adept at utilizing cutting-edge technologies, such as HTML, CSS, JavaScript, React, NextJS, VueJS, PHP, Laravel, and Livewire, to deliver robust and efficient solutions.</p><p>Throughout my career, I have demonstrated a track record of delivering high-quality projects that meet client requirements and exceed expectations. I excel at collaborating with cross-functional teams to ensure seamless integration between frontend and backend systems, while prioritizing performance, functionality, and user experience. Additionally, my expertise extends to mobile app development using React-Native and proficient server management using GitHub Actions, cPanel, Vercel, Heroku, and Digital Ocean.</p><p>With a strong attention to detail and a commitment to continuous learning, I thrive in dynamic and fast-paced environments. I am eager to leverage my skills and experience to contribute to the success of Bitfumes, while further expanding my technical expertise.</p><p>Please note that this introduction can be customized to align with your specific skills, experience, and career goals. It should serve as a concise and compelling summary that captures the attention of potential employers and highlights your unique value proposition.</p>",
+      "contacts": [
+        {
+          "type": "phone",
+          "value": "9999999999"
+        },
+        {
+          "type": "email",
+          "value": "debjit012@gmail.com"
+        },
+        {
+          "type": "address",
+          "value": "Murshidabad, West Bengal, India"
+        },
+        {
+          "type": "website",
+          "value": "https://debjit.in"
+        },
+        {
+          "type": "github",
+          "value": "debjit"
+        },
+        {
+          "type": "twitter",
+          "value": "debjit012"
+        },
+        {
+          "type": "linkedin",
+          "value": "in/debjitwb"
+        }
+      ],
+      "employments": [
+        {
+          "company": "Freelance",
+          "role": "Software Engineer",
+          "duration": {
+            "startMonth": "January",
+            "startYear": "2018",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        },
+        {
+          "company": "Bitfumes Technologies",
+          "role": "Full Stack Software Engineer",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        }
+      ],
+      "educationCertificates": [
+        {
+          "institution": "George Telegraph Training Institute",
+          "course": "Diploma in Computer Hardware and Networking",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2007",
+            "current": false,
+            "endMonth": "Augest",
+            "endYear": "2009"
+          },
+          "grade": "1",
+          "typeOfCertficate": "Diploma",
+          "description": "This is a certificate of completion of diploma in Computer Hardware and Networking.",
+          "link": "#"
+        },
+        {
+          "institution": "MSME Kolkata",
+          "course": "Web Development using PHP and MySQL and .net and MsSQL",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2014",
+            "current": false,
+            "endMonth": "Febuary",
+            "endYear": "2015"
+          },
+          "typeOfCertficate": "Certificate of Completion",
+          "description": "This is a certificate of completion of Web Development"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Examination Web App (MVP)",
+          "description": "This application is fully featured web application for taking mcq exmaination. You can set up and get examination completely free of cost.",
+          "projectLink": "https://github.com/alpana-Web-Solution/openexam",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Laravel",
+              "level": "Expert"
+            },
+            {
+              "title": "Livewire",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Laravel Blade",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Blood Donation Diary (MVP)",
+          "description": "NGO who work in blood donation Field, needs to keep a ledger for there donations, now with this software they can take care of the whole system very efficiently.",
+          "projectLink": "https://github.com/alpana-Web-Solution/bdd",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Laravel",
+              "level": "Expert"
+            },
+            {
+              "title": "Livewire",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Laravel Blade",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Personal Portfolio Site",
+          "description": "My website is built with Next.JS and its default image optimization, which helps me get a more responsive and fast page load speed. It is an ongoing project.",
+          "projectLink": "https://debjit.in",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Next.JS",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Engaged in the development of mezohub.com",
+          "description": "<p>- Advocate for Test-Driven Development (TDD) to ensure codebase stability and reliability.</p>\n          <p>- Spearhead migration of front-end architecture from NextJS to Laravel, Inertia, and React monolithic app, reducing reliance on NextJS.</p>\n          <p>- Collaborate with UI/UX designer to transform Figma designs into Tailwind CSS and React components.</p>\n          <p>- Contribute to server management scripting, database operations, RESTful API development, socket implementation, Redis cache configuration, Laravel queue optimization, email handling, and Laravel job execution on the backend.</p>\n          <p>- Actively participate in code and PR reviews, maintaining high-quality standards and sharing insights with the team.</p>\n          <p>These bullet points summarize your various technical responsibilities and achievements within the mezohub.com development team, highlighting your expertise in TDD, front-end migration, UI/UX collaboration, backend development, and code review processes.</p>",
+          "projectLink": "https://debjit.in",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Next.JS",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Documentation for mezohub.com",
+          "description": "<p>- Contributed to the development and documentation of mezohub.com, a platform dedicated to server management and application deployment.</p>\n          <p>- Assisted in creating comprehensive and user-friendly documentation, including written instructions, visual aids, and examples, in close collaboration with the development team.</p>\n          <p>- Interacted with users to gather feedback and ensure the documentation remained up-to-date and aligned with their needs.</p>\n          <p>- Aimed to empower users by providing clear instructions, facilitating efficient server management and application deployment through mezohub.com.</p>",
+          "projectLink": "https://debjit.in",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Next.JS",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Open-Source Contribution (https://reactplay.io/)",
+          "description": "<p>- Actively involved in the development and revamping of the event page for the React Play Activity website as an open-source contributor.</p>\n          <p>-  Collaborating with the existing maintainer team to simplify and enhance the codebase, eliminating complex and overengineered sections.</p>\n          <p>- Working with the GraphQL API and leveraging NextJS's server-side rendering functionalities (getServerProps and getStaticProps) to fetch data from the database and create a static site.</p>\n          <p>- Utilizing NextJS Image components to optimize image handling throughout the website.</p>\n          <p>- Streamlining the code and improving its readability to enhance maintainability and facilitate engagement and understanding for future contributors.</p>\n          <p>- Emphasizing the development of a well-structured codebase and enforcing consistent coding standards.</p>\n          <p>- Building a solid foundation for the event page of the React Play Activity website, welcoming contributions, and fostering efficient collaboration among developers.</p>\n          ",
+          "projectLink": "https://debjit.in",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "April",
+            "endYear": "2030"
+          },
+          "technologyUsed": [
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Next.JS",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Creating and maintaining an online examination platform",
+          "description": "Our team constructed this online examination platform from the ground up. This app is divided into three sections: the Laravel RESTful API, the NextJS frontend, and a Vue.JS admin panel. The site is mobile-friendly and SEO-friendly. My work included designing a new user interface for the entire site, including an examination, an analytics section, and a student dashboard. Create charts to allow students to track their progress. I started with React context and then moved on to Redux state management. I also added a blog section, comment and like buttons, and an admin section to manage the blog.",
+          "projectLink": "https://github.com/debjit",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2022"
+          },
+          "technologyUsed": [
+            {
+              "title": "Laravel",
+              "level": "Expert"
+            },
+            {
+              "title": "PHP",
+              "level": "Expert"
+            },
+            {
+              "title": "MySQL",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Git",
+              "level": "Senior"
+            },
+            {
+              "title": "React",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "NextJS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Typescript",
+              "level": "Mid Level"
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "title": "Participating Showwcase Hackerfest 2023",
+          "description": "Working on creating a multiple resume and jobb application tracker for the Hackfest. This project was a collaboration between me and my team.",
+          "link": "https://github.com/debjit",
+          "duration": {
+            "startMonth": "April",
+            "startYear": "2023",
+            "current": true,
+            "endMonth": "May",
+            "endYear": "2023"
+          }
+        },
+        {
+          "title": "Auditing Meta Front-End Developer Professional Certificate",
+          "description": "Auditing the Meta Front-End Developer Professional Certificate course and revisiting and gaining knowledge about more advanced React and web development technologies can be a great way to enhance your skills and stay updated in the field of front-end development.",
+          "link": "#",
+          "duration": {
+            "startMonth": "January",
+            "startYear": "2023",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        }
+      ],
+      "skills": {
+        "backend": [
+          {
+            "title": "Laravel",
+            "level": "Expert"
+          },
+          {
+            "title": "PHP",
+            "level": "Expert"
+          },
+          {
+            "title": "MySQL",
+            "level": "Mid Level"
+          }
+        ],
+        "frontend": [
+          {
+            "title": "HTML",
+            "level": "Mid Level"
+          },
+          {
+            "title": "CSS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "JavaScript",
+            "level": "Mid Level"
+          },
+          {
+            "title": "React",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Vue",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Tailwind CSS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "NextJS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Typescript",
+            "level": "Mid Level"
+          }
+        ],
+        "mobile_app_development": [
+          {
+            "title": "React Native",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Flutter",
+            "level": "Beginner"
+          }
+        ],
+        "server_management": [
+          {
+            "title": "GitHub Actions Deployments",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Heroku Deployments",
+            "level": "Mid Level"
+          },
+          {
+            "title": "AWS",
+            "level": "Beginner"
+          },
+          {
+            "title": "Vercel",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Firebase",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Cloudflare Pages",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Netlify",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Digital Ocean",
+            "level": "Advanced"
+          },
+          {
+            "title": "VPS",
+            "level": "Advanced"
+          }
+        ],
+        "api": [
+          {
+            "title": "REST API",
+            "level": "Advance"
+          },
+          {
+            "title": "GraphQL API",
+            "level": "Beginner"
+          }
+        ],
+        "DevOps": [
+          {
+            "title": "DevOps",
+            "level": "Advance"
+          }
+        ],
+        "sourcec_control": [
+          {
+            "title": "Source Control",
+            "level": "Advance"
+          },
+          {
+            "title": "GitHub.com",
+            "level": "Advance"
+          }
+        ]
+      }
+    }
+  }

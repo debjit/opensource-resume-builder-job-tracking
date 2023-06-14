@@ -1,0 +1,285 @@
+{
+    "id": "uuida1",
+    "userId": 1,
+    "resumeType": "freelancer",
+    "userInfo": {
+      "title": "Mr",
+      "firstName": "Debjit",
+      "lsatName": "Biswas"
+    },
+    "resume": {
+      "type": "freelancer",
+      "title": "Freelance Developer",
+      "profession": "Software Engineer",
+      "experience": "+5 years",
+      "location": "India",
+      "github": "debjit",
+      "linkedin": "debjitwb",
+      "summery": "<p>I am a versatile web developer experienced in building user-friendly and feature-rich web applications. I have worked on various projects, including a fully-featured examination web app and a blood donation diary MVP. These applications enable seamless exam setup and efficient management of donation records for NGOs in the blood donation field.</p><p>In addition to project-specific work, I have played a key role in developing and maintaining online examination platforms. One notable project involved constructing an online examination platform from scratch, incorporating a Laravel RESTful API, a NextJS frontend, and a Vue.JS admin panel. I focused on designing a new user interface, implementing progress tracking charts, and enhancing user experience throughout the site. I also contributed to backend development, handling server management scripting, database operations, RESTful API development, socket implementation, Redis cache configuration, Laravel queue optimization, email handling, and Laravel job execution.</p><p>I have made significant contributions to mezohub.com, a platform dedicated to server management and application deployment. Here, I championed Test-Driven Development (TDD) to ensure codebase stability and spearheaded the migration of the front-end architecture from NextJS to Laravel, Inertia, and React. Collaborating closely with UI/UX designers, I transformed Figma designs into functional Tailwind CSS and React components, enhancing the user interface and experience.</p>",
+      "contacts": [
+        {
+          "type": "phone",
+          "value": "9999999999"
+        },
+        {
+          "type": "email",
+          "value": "debjit012@gmail.com"
+        },
+        {
+          "type": "address",
+          "value": "Murshidabad, West Bengal, India"
+        },
+        {
+          "type": "website",
+          "value": "https://debjit.in"
+        },
+        {
+          "type": "github",
+          "value": "debjit"
+        },
+        {
+          "type": "twitter",
+          "value": "debjit012"
+        },
+        {
+          "type": "linkedin",
+          "value": "in/debjitwb"
+        }
+      ],
+      "employments": [
+        {
+          "company": "Freelance",
+          "role": "Software Engineer",
+          "duration": {
+            "startMonth": "January",
+            "startYear": "2018",
+            "current": true,
+            "endMonth": "",
+            "endYear": ""
+          }
+        },
+        {
+          "company": "Bitfumes Technologies",
+          "role": "Full Stack Software Engineer",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        }
+      ],
+      "educationCertificates": [
+        {
+          "institution": "George Telegraph Training Institute",
+          "course": "Bachelor of Technology",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": false,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          },
+          "grade": "1",
+          "typeOfCertficate": "Diploma",
+          "description": "This is a certificate of completion of Bachelor of Technology",
+          "link": "#"
+        },
+        {
+          "institution": "MSME Kolkata",
+          "course": "Web Development using PHP and MySQL and .net and MsSQL",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": false,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          },
+          "typeOfCertficate": "Certificate of Completion",
+          "description": "This is a certificate of completion of Web Development"
+        }
+      ],
+      "projects": [
+        {
+          "name": "Project Name 1",
+          "description": "This application is fully featured web application for taking mcq exmaination. You can set up and get examination completely free of cost.",
+          "projectLink": "https://github.com/debjit",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2022"
+          },
+          "technologyUsed": [
+            {
+              "title": "Laravel",
+              "level": "Expert"
+            },
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Typescript",
+              "level": "Mid Level"
+            },
+            {
+              "title": "NextJS",
+              "level": "Mid Level"
+            }
+          ]
+        },
+        {
+          "name": "Creating and maintaining an online examination platform",
+          "description": "Our team constructed this online examination platform from the ground up. This app is divided into three sections: the Laravel RESTful API, the NextJS frontend, and a Vue.JS admin panel. The site is mobile-friendly and SEO-friendly. My work included designing a new user interface for the entire site, including an examination, an analytics section, and a student dashboard. Create charts to allow students to track their progress. I started with React context and then moved on to Redux state management. I also added a blog section, comment and like buttons, and an admin section to manage the blog.",
+          "projectLink": "https://github.com/debjit",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": true,
+            "endMonth": "Augest",
+            "endYear": "2022"
+          },
+          "technologyUsed": [
+            {
+              "title": "Laravel",
+              "level": "Expert"
+            },
+            {
+              "title": "PHP",
+              "level": "Mid Level"
+            },
+            {
+              "title": "MySQL",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Git",
+              "level": "Senior"
+            },
+            {
+              "title": "React",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Tailwind CSS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "NextJS",
+              "level": "Mid Level"
+            },
+            {
+              "title": "Typescript",
+              "level": "Mid Level"
+            }
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "title": "Activity Title 1",
+          "description": "This application is fully featured web application for taking mcq exmaination. You can set up and get examination completely free of cost.",
+          "link": "#",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": false,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        },
+        {
+          "title": "Activity Title 1",
+          "description": "This application is fully featured web application for taking mcq exmaination. You can set up and get examination completely free of cost.",
+          "link": "#",
+          "duration": {
+            "startMonth": "September",
+            "startYear": "2021",
+            "current": false,
+            "endMonth": "Augest",
+            "endYear": "2025"
+          }
+        }
+      ],
+      "skills": {
+        "backend": [
+          {
+            "title": "Laravel",
+            "level": "Mid Level"
+          },
+          {
+            "title": "PHP",
+            "level": "Mid Level"
+          },
+          {
+            "title": "MySQL",
+            "level": "Mid Level"
+          }
+        ],
+        "frontend": [
+          {
+            "title": "HTML",
+            "level": "Mid Level"
+          },
+          {
+            "title": "CSS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "JavaScript",
+            "level": "Mid Level"
+          },
+          {
+            "title": "React",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Vue",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Tailwind CSS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "NextJS",
+            "level": "Mid Level"
+          },
+          {
+            "title": "Typescript",
+            "level": "Mid Level"
+          }
+        ]
+      },
+      "awards": [
+        {
+          "name": "Award Name",
+          "description": "Some demo award text, can be anything. This is just a demo award.",
+          "date": "2021-08-01",
+          "organisation": "Organiation Name",
+          "link": "https://github.com/debjit"
+        }
+      ],
+      "volunteering": [
+        {
+          "name": "Volunteering Name 1",
+          "description": "Some demo volunteering text, can be anything. This is just a demo volunteering.",
+          "date": "2021-08-01",
+          "organisation": "Organiation Name",
+          "link": "https://github.com/debjit",
+          "position": "Some position"
+        },
+        {
+          "name": "Volunteering Name 2",
+          "description": "Some demo volunteering text, can be anything. This is just a demo volunteering.",
+          "date": "2021-08-02",
+          "organisation": "Organiation Name",
+          "link": "https://github.com/debjit",
+          "position": "Some position"
+        }
+      ]
+    }
+  }

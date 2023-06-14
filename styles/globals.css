@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+/* @layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+  .h2-content {
+    text-bold text-2xl border-b-4 border-slate-400 text-left font-bold py-0.5;
+  }
+  
+} */
+
+@layer components {
+
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
+
+  .h2-content {
+  @apply font-bold text-2xl border-b-4 border-slate-400 text-left pb-0.5 mb-4;
+  }
+  .h3-content {
+    @apply font-bold text-xl;
+    }
+  .test-border{
+    @apply border border-black;
+  }
+  .main-content{
+    @apply m-auto mt-4 min-h-screen text-gray-950 max-w-7xl flex flex-row w-full;
+  }
+  /* Print */
+
+  .h2-print-content {
+    @apply font-bold text-xl border-b-2 border-slate-400 text-left pb-0.5 mb-2;
+    }
+  .text-print-h2{
+    @apply text-xl;
+  }
+  .text-print-h3{
+    @apply text-md;
+  }
+  .text-print{
+    @apply text-sm;
+  }
+}
