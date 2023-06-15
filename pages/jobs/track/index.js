@@ -41,7 +41,7 @@ export default function TrackJobs({ appliedJobs, savedJobs }) {
                             className="py-1 px-2 bg-green-300 text-black rounded-md text-center"
                             href="/jobs"
                           >
-                            Apply
+                            Select Resume to Apply
                           </Link>
                         </div>
                       </div>

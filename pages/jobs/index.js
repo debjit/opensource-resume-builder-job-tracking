@@ -83,14 +83,14 @@ function Index({ jobs }) {
                         <option value="option3">Back End</option>
                         <option value="option3">Freelancer</option>
                       </select>
-                      <button
+                      <Link
+                        href="/jobs/apply"
                         id="applyButton"
                         class="bg-blue-500 hover:bg-gray-600 text-white py-2 px-4 rounded-md disabled"
-                        onClick={()=> alert('This is a demo. Your job application will be proceed from here.')}
                       >
-                        Apply
+                        Evaluate and Apply
                         {/* <span class="tooltip text-xs ml-2">(Coming Soon)</span> */}
-                      </button>
+                      </Link>
                     </div>
                   )}
                 </div>

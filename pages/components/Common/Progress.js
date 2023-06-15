@@ -9,10 +9,10 @@ const Progress = ({ label, percentage }) => {
   return (
     <div className="w-full">
       <div className="flex items-center">
-        <div className="w-1/4">
-          <span className="text-gray-600">{label} :</span>
+        <div className="w-1/6">
+          <span className="text-gray-600 font-semibold">{label} :</span>
         </div>
-        <div className="w-3/4">
+        <div className="w-5/6">
           <div className="relative h-4 bg-gray-200 border border-gray-300">
             <div
               className={`absolute top-0 left-0 h-full ${barColor}`}
